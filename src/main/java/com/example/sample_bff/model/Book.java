@@ -8,20 +8,17 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/** @author satya */
+@Data
 @Table
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Book {
 
-	@Id
-	private String isn;
-	private String title;
-	private String publisher;
-	private String publishedDate;
-	private String[] author;
-
-
-
+  @Id private String isn;
+  private String title;
+  private String publisher;
+  private String publishedDate;
+  private String[] author;
 }

@@ -8,20 +8,18 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author satya
- */
+/** @author satya */
 @Component
 public class AllBooksDataFetcher implements DataFetcher<List<Book>> {
 
-    private final BookRepository bookRepository;
+  private final BookRepository bookRepository;
 
-    public AllBooksDataFetcher(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
-    }
+  public AllBooksDataFetcher(BookRepository bookRepository) {
+    this.bookRepository = bookRepository;
+  }
 
-    @Override
-    public List<Book> get(DataFetchingEnvironment dataFetchingEnvironment) {
-        return bookRepository.findAll();
-    }
+  @Override
+  public List<Book> get(DataFetchingEnvironment dataFetchingEnvironment) {
+    return bookRepository.findAll();
+  }
 }
