@@ -1,7 +1,6 @@
 package com.example.sample_bff.resolver;
 
 import com.example.sample_bff.model.Book;
-import com.example.sample_bff.repository.AuthorRepository;
 import com.example.sample_bff.service.BookService;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import graphql.relay.Connection;

@@ -69,6 +69,21 @@
 			<artifactId>graphql-java-tools</artifactId>
 			<version>6.3.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.zhokhov.graphql</groupId>
+			<artifactId>graphql-datetime-spring-boot-starter</artifactId>
+			<version>3.0.0</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>graphql-kickstart-spring-boot-autoconfigure-tools</artifactId>
+					<groupId>com.graphql-java-kickstart</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>graphql-spring-boot-starter</artifactId>
+					<groupId>com.graphql-java-kickstart</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>
